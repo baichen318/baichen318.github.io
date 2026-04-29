@@ -4,6 +4,7 @@ table#tlayout {
     border: none;
     border-collapse: separate;
     background: white;
+    width: 100%;
 }
 
 body {
@@ -11,16 +12,15 @@ body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
+	color: #111111;
 }
 
 #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 0.5em 8px 1.0em 8px;
 	font-size: 1.0em;
-	width: auto;
+	width: 175px;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -32,13 +32,21 @@ body {
 }
 
 #layout-content {
-	padding-top: 0.0em;
+	padding-top: 1.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
     border: none;
     background: white;
     text-align: left;
     vertical-align: top;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.is-active {
+    display: block;
 }
 
 #layout-menu a {
@@ -77,7 +85,6 @@ a:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
@@ -336,7 +343,6 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
     border-collapse: collapse;
 }
 
@@ -344,8 +350,7 @@ td {
     padding: 2px;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
+    text-align: left;
 }
 
 table + table {
@@ -364,6 +369,20 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+    vertical-align: top;
+}
+
+table.imgtable {
+    margin-bottom: 0.8em;
+}
+
+table.imgtable h1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#layout-content table.imgtable h1:first-child {
+    margin-top: 0;
 }
 
 q {
