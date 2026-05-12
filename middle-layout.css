@@ -43,6 +43,25 @@ table#tlayout {
   min-height: 100vh;
 }
 
+#layout-menu {
+  position: relative;
+}
+
+.sidebar-logo {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-logo img {
+  height: 118px;
+  width: auto;
+  max-width: 70%;
+}
+
 #layout-content {
   max-width: none;
 }
@@ -72,6 +91,20 @@ table#tlayout {
   div.menu-item {
     display: inline-block;
     margin-right: 1em;
+  }
+
+  .sidebar-logo {
+    position: static;
+    display: inline-block;
+    width: auto;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    transform: none;
+  }
+
+  .sidebar-logo img {
+    height: 42px;
+    max-width: none;
   }
 
   table.imgtable,
