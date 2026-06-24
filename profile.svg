@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A generic placeholder for an academic homepage profile photo.</desc>
+  <rect width="150" height="150" fill="#f2f2f2" />
+  <circle cx="75" cy="55" r="28" fill="#c8c8c8" />
+  <path d="M28 132c7-30 25-46 47-46s40 16 47 46" fill="#c8c8c8" />
+  <text x="75" y="143" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Your Photo</text>
+</svg>
